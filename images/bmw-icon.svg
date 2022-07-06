@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_25" data-name="Group 25" transform="translate(-1101 -379)">
+    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(1101 379)" fill="#1c69d4" stroke="#0653b6" stroke-width="0.5">
+      <circle cx="32" cy="32" r="32" stroke="none"/>
+      <circle cx="32" cy="32" r="31.75" fill="none"/>
+    </g>
+    <g id="bmw_sale-conf-prof_request-for-contact_d" transform="translate(1109 389)">
+      <path id="Path_37" data-name="Path 37" d="M32,24.947a3.375,3.375,0,0,0-3.521-3.5h-.405c-.85.462-2.034,1.387-3.345,1.387s-2.494-.925-3.345-1.387h-.405A3.775,3.775,0,0,0,17,24.947V27H32Z" fill="#e6e6e6"/>
+      <path id="Path_38" data-name="Path 38" d="M24.5,19.534c1.682,0,3.047-1.656,3.047-3.7s-1.365-3.7-3.047-3.7-3.047,1.656-3.047,3.7S22.818,19.534,24.5,19.534Z" fill="#e6e6e6"/>
+      <path id="Path_39" data-name="Path 39" d="M8,8V32h5V43L25,32H40V8ZM37,29H23.891L16,36.125V29H11V11H37Z" fill="#e6e6e6"/>
+    </g>
+  </g>
+</svg>

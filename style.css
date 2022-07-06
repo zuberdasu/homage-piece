@@ -1,0 +1,547 @@
+@font-face {
+  font-family: iconFont;
+  src: url(./fonts/BMW_iconFont_v1.woff2);
+}
+
+@font-face {
+  font-family: nextLightFont;
+  src: url(./fonts/BMWTypeNext-Light.woff2);
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: nextLightFont, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+.top {
+  background-image: url(./images/iXCar.jpg);
+  color: white;
+  width: auto;
+  height: 65vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.navAndLogo {
+  display: grid;
+  grid-template-columns: 12fr 1fr;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.BMWLogo img {
+  height: 36px;
+  width: 36px;
+}
+
+.icons a {
+  text-decoration: none;
+  font-family: iconFont;
+  font-weight: 400;
+  font-size: 48px;
+
+  color: white;
+}
+
+.content img {
+  height: 30px;
+  width: 55px;
+}
+
+.content {
+  /*height: 100%;
+  width: 100%;*/
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 4rem;
+}
+
+.top .button {
+  background-color: rgb(9, 86, 186);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 52px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.rowTwo .button {
+  background-color: none;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 52px;
+
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.iconText {
+  display: flex;
+}
+
+.toggler {
+  position: fixed;
+  z-index: 2;
+  height: 20px;
+  width: 20px;
+  top: 44px;
+  left: 28px;
+  opacity: 0;
+}
+
+.menuItems {
+  background: white;
+  width: 0%;
+
+  /* APPLYING TRANSITION TO THE MENU :  */
+
+  transition: all 0.4s ease;
+}
+
+/* STYLING THE LIST :  */
+
+.menuItems > ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 70px;
+  padding-left: 10px;
+
+  /* HIDDEN INITIALLY  :  */
+
+  visibility: hidden;
+}
+
+/*.menuItems > ul > li > a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* WHEN THE TOGGLER IS CHECKED, CHANGE THE VISIBILITY TO VISIBLE :  */
+
+.toggler:checked ~ .menuItems > ul {
+  transition: visibility 0.4s ease;
+  transition-delay: 0.1s;
+  visibility: visible;
+  color: black;
+}
+
+.toggler:checked ~ .menuItems {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.menuItems > ul > li {
+  list-style: none;
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.menu::before {
+  content: " \e932";
+}
+
+.search::before {
+  content: " \e930";
+}
+
+.findCentre::before {
+  content: " \e943";
+}
+
+.myBmw::before {
+  content: " \e951";
+}
+
+.shoppingBasket::before {
+  content: " \e93e";
+}
+
+.rowTwo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardTwo {
+  background-image: url(./images/new_car.jpg);
+  height: 350px;
+  width: 100%;
+  background-position: center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.cardThree {
+  background-image: url(./images/used_car);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+.top,
+.cardTwo,
+.cardThree {
+  margin: 0.5rem;
+}
+.cardTwo h2,
+.cardTwo a,
+.cardThree h2,
+.cardThree a {
+  margin-left: 4rem;
+}
+.cardHead {
+  display: flex;
+}
+
+/*.form {
+  font-family: iconFont;
+}*/
+
+.build span::before {
+  font-family: iconFont;
+  content: "\e941";
+  font-size: 48px;
+}
+
+.appointment span::before {
+  font-family: iconFont;
+  content: "\e94b";
+  font-size: 48px;
+}
+
+.genius span::before {
+  font-family: iconFont;
+  content: "\e930";
+  font-size: 48px;
+}
+
+.box {
+  width: 215;
+  height: 48px;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.button {
+  background-color: none;
+  border: 2px solid black;
+  display: block;
+  width: 180px;
+  height: 52px;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form div {
+  background-color: #f2f2f2;
+
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.carSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.carCard a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.carCard a::before {
+  content: "> ";
+}
+
+/*Create empty space */
+.carCard a:hover::before {
+  content: "\00a0";
+  padding-left: 11px;
+}
+
+.suggestedContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.suggestedContainer h3,
+.suggestedContainer h4 {
+  color: white;
+}
+
+.suggestedContainer .column1,
+.suggestedContainer .column2,
+.suggestedContainer .column3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6px;
+}
+.suggestedContainer li {
+  list-style: "\2713";
+}
+
+.column1 {
+  background-image: url(./images/preconfiguration-limbic-traditionalist.jpg);
+  background-size: 100% 55%;
+
+  background-repeat: no-repeat;
+}
+.column2 {
+  background-image: url(./images/preconfiguration-limbic-disciplinarian.jpg);
+  background-size: 100% 55%;
+
+  background-repeat: no-repeat;
+}
+.column3 {
+  background-image: url(./images/preconfiguration-limbic-harmoniser.jpg);
+  background-size: 100% 55%;
+
+  background-repeat: no-repeat;
+}
+
+.news img {
+  width: 100%;
+  height: 15%vh;
+}
+
+.bottomCard img {
+  width: 100%;
+  height: auto;
+}
+
+.bottomCard {
+  flex-basis: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.twoCards {
+  display: flex;
+  flex-direction: column;
+}
+
+.test {
+  width: 890px;
+  height: 501px;
+}
+
+.service span::before {
+  font-family: iconFont;
+  font-size: 42px;
+  content: "\e957";
+}
+
+.testDrive span::before {
+  font-family: iconFont;
+  font-size: 42px;
+  content: "\e950";
+}
+
+.build span::before {
+  font-family: iconFont;
+  font-size: 42px;
+  content: "\e941";
+}
+
+.brochure span::before {
+  font-family: iconFont;
+  font-size: 42px;
+  content: "\e949";
+}
+
+.salesIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.salesIcons span {
+  display: block;
+  height: 35px;
+}
+
+.salesIcons .button {
+  background-color: none;
+  border: none;
+  display: block;
+  width: auto;
+  height: 80px;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #e6e6e6;
+}
+
+.socialMedia img {
+  width: 45px;
+  height: 45px;
+}
+
+.siteMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+}
+
+.siteMap a {
+  text-decoration: none;
+  color: #666;
+}
+
+.siteMap a:hover {
+  color: #262626;
+}
+
+.siteMap li {
+  list-style: none;
+}
+
+.siteMap ul {
+  padding: 0;
+}
+
+.finalRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finalRow a {
+  text-decoration: none;
+}
+
+.finalRow li {
+  display: inline;
+}
+
+@media screen and (min-width: 750px) {
+  .top nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+  }
+
+  nav .menuItems {
+    width: auto;
+    order: -1;
+    background-color: initial;
+    transition: none;
+  }
+
+  nav .icons {
+    order: 2;
+  }
+
+  .menuItems > ul {
+    flex-direction: row;
+    visibility: visible;
+    position: relative;
+    top: 0px;
+    padding-left: 0px;
+  }
+
+  .menu::before {
+    content: "";
+  }
+
+  .toggler {
+    visibility: hidden;
+  }
+
+  .content {
+    justify-content: flex-start;
+  }
+
+  .rowTwo {
+    flex-direction: row;
+  }
+
+  .form {
+    flex-direction: row;
+  }
+
+  .form div {
+    flex-direction: column;
+  }
+
+  .carSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .suggestedContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .twoCards {
+    flex-direction: row;
+  }
+
+  .siteMap {
+    flex-direction: row;
+  }
+
+  .finalRow {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
