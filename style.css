@@ -48,9 +48,11 @@ h3 {
 }
 
 .BMWLogo {
-  margin-left: 30px;
+  margin-left: 8px;
   display: flex;
   align-items: flex-start;
+  position: absolute;
+  right: 30px;
 }
 .icons a {
   text-decoration: none;
@@ -284,6 +286,13 @@ h3 {
   background-size: 100% 55%;
 
   background-repeat: no-repeat;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
 }
 
 .news img {
@@ -540,6 +549,9 @@ h3 {
 
   /* start of menu styling*/
 
+  .icons {
+    margin-left: 0;
+  }
   .divider {
     display: none;
   }
@@ -547,6 +559,7 @@ h3 {
   .navAndLogo {
     background-color: transparent;
     padding-bottom: 0;
+    padding-top: 5px;
   }
 
   .navAndLogo:hover {
@@ -560,7 +573,7 @@ h3 {
 
   .subMenu {
     background-color: transparent;
-    top: 0px;
+    top: 2px;
     width: auto;
   }
   .subMenu a {
@@ -590,6 +603,7 @@ h3 {
     display: inline-block;
     background-color: transparent;
     margin: 0 5px;
+    border-bottom: transparent 2px solid;
   }
 
   .menuItems ul li a {
@@ -602,7 +616,7 @@ h3 {
 
   .menuItems ul ul {
     position: absolute;
-    top: 72px;
+    top: 71px;
     z-index: 100;
     opacity: 0;
     visibility: hidden;
