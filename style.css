@@ -42,7 +42,6 @@ h3 {
   display: grid;
   grid-template-columns: 12fr 1fr;
   padding-top: 20px;
-  /*padding-left: 10px;*/
   padding-right: 10px;
   padding-bottom: 5px;
 }
@@ -59,7 +58,6 @@ h3 {
   font-family: iconFont;
   font-weight: 400;
   font-size: 48px;
-
   color: white;
 }
 
@@ -101,7 +99,6 @@ h3 {
   align-items: center;
   width: 285px;
   height: 52px;
-
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -201,7 +198,6 @@ h3 {
   display: block;
   width: 180px;
   height: 52px;
-
   color: black;
   text-align: center;
   text-decoration: none;
@@ -248,8 +244,12 @@ h3 {
 
 .suggestedContainer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.suggestedContainer img {
+  width: 400px;
 }
 
 .suggestedContainer h3,
@@ -361,7 +361,6 @@ h3 {
   display: block;
   width: auto;
   height: 80px;
-
   color: black;
   text-align: center;
   text-decoration: none;
@@ -488,15 +487,12 @@ h3 {
 
   position: relative;
 }
-/*.menuItems ul ul li {
-  border-bottom: 0px;
-}*/
 
 .checkBox {
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 785px) {
   .top nav {
     display: flex;
     justify-content: space-between;
@@ -527,11 +523,6 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-  }
-
-  .suggestedContainer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
   }
 
   .twoCards {
@@ -619,13 +610,12 @@ h3 {
     top: 71px;
     z-index: 100;
     opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: top 0.3s;
   }
 
   .menuItems ul li:hover > ul {
     opacity: 1;
-    visibility: visible;
     display: block;
   }
 
@@ -636,10 +626,9 @@ h3 {
   .menuItems ul ul li {
     position: relative;
     margin: 0px;
-    width: 225px;
+    width: 200px;
     float: none;
     display: list-item;
-    /*border-bottom: 1px solid rgba(0, 0, 0, 0.3);*/
     background-color: white;
   }
 
@@ -650,7 +639,7 @@ h3 {
   .menuItems ul ul ul li {
     position: relative;
     top: -75px;
-    left: 225px;
+    left: 200px;
   }
 
   .show,
@@ -662,5 +651,12 @@ h3 {
   .fa-plus {
     font-size: 15px;
     margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suggestedContainer {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: 1fr;
   }
 }
