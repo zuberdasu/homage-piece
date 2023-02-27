@@ -112,6 +112,15 @@ h3 {
   display: flex;
 }
 
+.iconText h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.textArea {
+  padding-bottom: 10px;
+}
+
 .menu::before {
   content: " \e932";
 }
@@ -170,7 +179,7 @@ h3 {
   display: flex;
 }
 
-.build span::before {
+.form .build span::before {
   font-family: iconFont;
   content: "\e941";
   font-size: 48px;
@@ -200,10 +209,12 @@ h3 {
 .button {
   background-color: none;
   border: 2px solid black;
-  display: block;
+  display: flex;
   width: 180px;
   height: 52px;
   color: black;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -338,7 +349,7 @@ h3 {
   content: "\e950";
 }
 
-.build span::before {
+.salesIcons .build span::before {
   font-family: iconFont;
   font-size: 42px;
   content: "\e941";
